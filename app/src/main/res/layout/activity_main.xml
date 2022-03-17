@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <!--<Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="버튼"
-        android:id="@+id/btn"/>
+        android:id="@+id/btn"/>-->
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="여기는 어디?"/>
-</LinearLayout>
+        android:layout_width="304dp"
+        android:layout_height="197dp"
+        android:text="텍스트"
+        android:id="@+id/dd"/>
+    <!--android:gravity="" 텍스트 뷰 안의 내부 텍스트를 바꿔-->
+    <!--android:layout_gravity="" 텍스트 뷰를 바꿔-->
+        <!--margin은 부모로부터 간격-->
+        <!--padding은 내부 컨텐츠 간격-->
+    </FrameLayout>

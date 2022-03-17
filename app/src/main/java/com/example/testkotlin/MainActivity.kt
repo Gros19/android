@@ -2,6 +2,7 @@ package com.example.testkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import com.example.testkotlin.databinding.ActivityMainBinding
 
@@ -14,16 +15,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //바인딩 초기화
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        //레이아웃(root뷰) 표시
-        setContentView(binding.root)
-        //뷰바인딩으로 버튼 접근
-        binding.btn.setOnClickListener{
-            //뷰바인딩으로 텍스트 접근
-            binding.btn.text = " 바인딩 굳"
-            Toast.makeText(this, "토스트",Toast.LENGTH_SHORT).show()
+        fun DDuck(v : View){
+            println("뚝!!")
         }
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.dd.setOnClickListener{
+            DDuck(it)
+        }
+//        //바인딩 초기화
+//        val binding = ActivityMainBinding.inflate(layoutInflater)
+//        //레이아웃(root뷰) 표시
+//        setContentView(binding.root)
+//        //뷰바인딩으로 버튼 접근
+//        binding.btn.setOnClickListener{
+//            //뷰바인딩으로 텍스트 접근
+//            binding.btn.text = " 바인딩 굳"
+//            Toast.makeText(this, "토스트",Toast.LENGTH_SHORT).show()
+//        }
 
 
         val items : List<String> = listOf("apple", "bannana", "kiwifruit")
@@ -66,6 +75,7 @@ class MainActivity : AppCompatActivity() {
         }
         if (list.size !in list.indices){
             println("리스트 인덱스를 넘어갔다.")
+            println("list.indices: ${list.indices}")
         }
 
         for( x in 1..5){
