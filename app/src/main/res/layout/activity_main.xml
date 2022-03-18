@@ -14,8 +14,12 @@
     <TextView
         android:layout_width="304dp"
         android:layout_height="197dp"
-        android:text="텍스트"
-        android:id="@+id/dd"/>
+        android:textSize="40sp"
+        android:text="카운트"
+        android:background="#FF8BC34A"
+        android:id="@+id/dd"
+        />
+    <!--textSize에 dp가 아닌 sp를 줘야만 기기 환경설정에 따라 텍스트 크기가 바뀐다. -->
     <!--android:gravity="" 텍스트 뷰 안의 내부 텍스트를 바꿔-->
     <!--android:layout_gravity="" 텍스트 뷰를 바꿔-->
         <!--margin은 부모로부터 간격-->

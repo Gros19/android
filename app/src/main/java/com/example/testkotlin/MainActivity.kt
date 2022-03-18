@@ -20,8 +20,10 @@ class MainActivity : AppCompatActivity() {
         }
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        var cnt = 0;
         binding.dd.setOnClickListener{
             DDuck(it)
+            binding.dd.text = "${cnt++}"
         }
 //        //바인딩 초기화
 //        val binding = ActivityMainBinding.inflate(layoutInflater)
