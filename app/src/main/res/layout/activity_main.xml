@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,13 +13,150 @@
         android:id="@+id/btn"/>-->
 
     <TextView
-        android:layout_width="304dp"
-        android:layout_height="197dp"
-        android:textSize="40sp"
-        android:text="카운트"
-        android:background="#FF8BC34A"
         android:id="@+id/dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:drawablePadding="50dp"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:shadowColor="#7339DA"
+        android:background="#FFFFFF"
+        android:text="카운트"
+        android:textSize="40sp"
+        android:elevation="20dp"
+        app:drawableLeftCompat="@drawable/free_icon_play" />
+    <!--android:translationZ="40dp" 영역 그림자
+        android:elevation="20dp" 위와 비슷-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="www.naver.com"
+        android:linksClickable="false"
+        android:textColorLink="#244E7E"
+        android:textSize="40sp"
+        android:autoLink="web"
+        android:visibility="visible"
+        android:clickable="false"
+
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:autoLink="email"
+        android:text="wnnahd112@naver.com"
+        android:enabled="false"
+        android:id="@+id/emilLink"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="+82-10-5427-3333"
+        android:autoLink="phone"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="지도 : https://goo.gl/maps/n6Qhs7Xeiu2ESBBE7 \n 핸드폰 번호 : +82-10-5555-8833"
+        android:autoLink="web|phone"
+        />
+
+    <TextView
+        android:layout_width="132dp"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom"
+        android:autoSizeStepGranularity="5sp"
+        android:autoSizeTextType="uniform"
+        android:text="텍스트" />
+
+    <TextView
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:autoSizeStepGranularity="5sp"
+        android:autoSizeTextType="uniform"
+        android:foreground="#6ff5"
+        android:text="abcd"
+        android:textAllCaps="true"
+        android:fontFamily="@font/d2_coding_ver132_20180524_ligature"
+        android:textColor="@color/gros" />
+
+    <TextView
+        android:layout_width="178dp"
+        android:layout_height="135dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="150dp"
+        android:autoSizeStepGranularity="5sp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/nietzsche_lite"
+        android:text="abcd"
+        android:textAllCaps="true"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/gros"
+        android:gravity="bottom"
+        android:paddingTop="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="이것은 여러 줄입니다\n이것은 여러 줄입니다.\n이것은 여러 줄입니다.\n이것은 여러 줄입니다\n이것은 여러 줄입니다.\n이것은 여러 줄입니다."
+        android:lineSpacingExtra="20dp"
+        />
+
+    <TextView
+        android:id="@+id/visibleBT"
+        android:layout_width="174dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center|right"
+        android:layout_marginTop="55dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/costum_button"
+        android:drawableLeft="@drawable/free_icon_play"
+        android:drawablePadding="5dp"
+        android:elevation="14dp"
+        android:lineSpacingExtra="20dp"
+        android:paddingHorizontal="7dp"
+        android:paddingVertical="20dp"
+        android:radius="5dp"
+        android:text="hideBUTTON"
+        android:textAllCaps="false"
+        android:textColor="#433815"
+        android:tooltipText="이 버튼을 누르면 버튼이 숨겨집니다." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="50dp"
+        android:text="visible?"
+        android:textAllCaps="false"
+        android:id="@+id/visibleBtOn"
+        android:lineSpacingExtra="20dp"
+        />
+    <!--android:autoSizeMaxTextSize="40sp"
+    android:autoSizeMinTextSize="20sp"
+    android:autoSizeTextType="uniform"
+
+    android:drawableRight="@mipmap/ic_launcher"
+    android:drawableTint="@color/gros"
+    android:drawableTintMode="screen"
+    android:drawablePadding="23dp"
+    android:textColor="@color/gros"
+    android:gravity="center"-->
+    <!--android:drawableTop="@mipmap/ic_launcher"TextView 안에서도 그림을 박스 내에 위치시킬 수 있다.-->
     <!--textSize에 dp가 아닌 sp를 줘야만 기기 환경설정에 따라 텍스트 크기가 바뀐다. -->
     <!--android:gravity="" 텍스트 뷰 안의 내부 텍스트를 바꿔-->
     <!--android:layout_gravity="" 텍스트 뷰를 바꿔-->

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.view.isVisible
 import com.example.testkotlin.databinding.ActivityMainBinding
 
 
@@ -15,6 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+//        val vbinding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(R.layout.activity_main)
+//        vbinding.visibleBT.setOnClickListener{
+//
+//        }
+
+
+
         fun DDuck(v : View){
             println("뚝!!")
         }
@@ -24,6 +34,20 @@ class MainActivity : AppCompatActivity() {
         binding.dd.setOnClickListener{
             DDuck(it)
             binding.dd.text = "${cnt++}"
+        }
+
+
+
+        binding.visibleBtOn.setOnClickListener {
+//            binding.visibleBT.isVisible = true
+            binding.visibleBT.visibility = View.VISIBLE
+            binding.emilLink.isEnabled = true
+        }
+        binding.visibleBT.setOnClickListener {
+//            binding.visibleBT.isVisible=false
+            binding.visibleBT.visibility = View.INVISIBLE
+
+
         }
 //        //바인딩 초기화
 //        val binding = ActivityMainBinding.inflate(layoutInflater)
