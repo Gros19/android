@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--layer-list는 아래쪽이 우선순위-->
+
+    <item android:width="100dp" android:height="100dp">
+        <shape android:shape="rectangle">
+            <solid
+                android:color="@color/cardview_dark_background"/>
+        </shape>
+    </item>
+
+    <item android:width="50dp" android:height="50dp" android:gravity="center" android:drawable="@drawable/free_icon_font_play">
+        <shape android:shape="rectangle">
+            <solid
+                android:color="@color/cardview_shadow_start_color"/>
+        </shape>
+    </item>
+
+    <item android:top="20dp" android:bottom="20dp" android:left="20dp" android:right="20dp">
+        <shape android:shape="rectangle">
+            <solid
+                android:color="@color/cardview_shadow_start_color"/>
+        </shape>
+    </item>
+</layer-list>
