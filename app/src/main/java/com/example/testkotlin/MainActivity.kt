@@ -1,13 +1,11 @@
 package com.example.testkotlin
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testkotlin.databinding.ActivityJavaBinding
@@ -25,6 +23,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        var pref = this.getPreferences(0)
+        binding.etEmail.setText(pref.getString("이메일",""))
+        binding.etId.setText(pref.getString("아이디",""))
+        binding.etPass.setText(pref.getString("비밀번호",""))
+        binding.etAge.setText(pref.getString("나이",""))
+        binding.etName.setText(pref.getString("이름",""))
+
 
 
 
@@ -64,6 +69,16 @@ class MainActivity : AppCompatActivity() {
             /*setContentView(R.layout.activity_java)
             val textView: TextView =findViewById(R.id.tv_result)
             textView.setText("${binding.etId.text}님 환영합니다.")*/
+
+
+            /*로그인 정보 저장*/
+            var editor = this.getPreferences(0).edit()
+            editor.putString("이메일",binding.etEmail.text.toString()).apply()
+            editor.putString("비밀번호",binding.etPass.text.toString()).apply()
+            editor.putString("이름",binding.etName.text.toString()).apply()
+            editor.putString("나이",binding.etAge.text.toString()).apply()
+            editor.putString("아이디",binding.etId.text.toString()).apply()
+
 
 
 

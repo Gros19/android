@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTextChangedListenerExActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:onClick="Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼1"
+            android:id="@+id/btn_1"/>
+
+        <Button
+            android:onClick="Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼2"
+            android:id="@+id/btn_2"/>
+
+        <Button
+            android:onClick="Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버튼3"
+            android:id="@+id/btn_3"/>
+
+
+    </LinearLayout>
+    <!--FrameLayout은 이미지를 중첩시킬 수 있다.
+    LinearLayout은 이미지가 겹치지 않는다.
+    여러장의 이미지가 있으면 뭉개진다.-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_1"
+            android:background="@color/black"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_2"
+            android:background="@color/purple_500"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_3"
+            android:background="@color/gros"/>
+    </FrameLayout>
+
+
+<!--    &lt;!&ndash;커서 깜박임 중지&ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/et"-->
+<!--        android:maxLength="10"-->
+<!--        android:cursorVisible="false"-->
+<!--        android:textColor="#00ff00"-->
+<!--        android:maxHeight="200dp"-->
+<!--        android:textCursorDrawable="@null"-->
+<!--        android:background="#4B6E8C"/>-->
+
+<!--    &lt;!&ndash;줄 없애기&ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/et1"-->
+<!--        android:maxLength="10"-->
+<!--        android:background="@null" />-->
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/et2"-->
+<!--        android:maxLength="10"-->
+<!--        android:cursorVisible="false"-->
+<!--        android:background="#772E2E"/>-->
+
+<!--    &lt;!&ndash;메모장처럼&ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/et3"-->
+<!--        android:textColor="#00fff0"-->
+<!--        android:maxHeight="200dp"-->
+<!--        android:textCursorDrawable="@null"/>-->
+
+<!--    &lt;!&ndash;커서, 하이라이트 색 변경&ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColorHighlight="#D82811"-->
+<!--        android:textCursorDrawable="@color/purple_700"/>-->
+
+<!--    &lt;!&ndash;이미지 뷰 색 채우기&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="#FFA"/>-->
+
+    <!--이미지 뷰 사진넣기(@null 가능)-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="266dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/typescript_resize" />-->
+
+    <!--상하회전-->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_basic"-->
+<!--        android:layout_width="329dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="matrix"-->
+<!--        android:rotation="90"-->
+<!--        android:src="@drawable/typescript_resize"/>-->
+
+    <!--좌우 회전-->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_basic"-->
+<!--        android:layout_width="329dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="matrix"-->
+<!--        android:rotation="90"-->
+<!--        android:scaleY="-1"-->
+<!--        android:src="@drawable/typescript_resize"/>-->
+
+<!--    투명도 -->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_basic"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/typescript_resize"-->
+<!--        android:scaleType="matrix"-->
+<!--        android:alpha="0.1"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_basic"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="@drawable/typescript_resize"-->
+<!--        android:onClick="LoadImage"-->
+<!--        />-->
+
+
+</LinearLayout>
