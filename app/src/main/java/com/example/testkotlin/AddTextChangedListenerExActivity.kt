@@ -16,12 +16,19 @@ import com.example.testkotlin.databinding.ActivityAddTextChangedListenerExBindin
 
 
 
+/*사진은 숫자로 만들 수 있어서 Int
+* drawable을 숫자로 참조할 수 있다.*/
+class Data(val profile:Int, val name:String)
+
 class AddTextChangedListenerExActivity : AppCompatActivity() {
     private lateinit var binding : ActivityAddTextChangedListenerExBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_text_changed_listener_ex)
 
+        binding = ActivityAddTextChangedListenerExBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        Click(binding.btn2)
 //        iv_basic.setScaleType(ImageView.ScaleType.MATRIX)
         /*이미지 회전*/
 //        val matrix = Matrix()
