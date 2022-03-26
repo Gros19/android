@@ -23,7 +23,9 @@ var RecycleDataList = arrayListOf(
     RecycleData(R.drawable.typescript,"12번"),
     RecycleData(R.drawable.typescript,"13번")
 )
+
 private lateinit var binding: ActivityRecycleScrollBinding
+
 class RecycleScrollActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,9 +33,11 @@ class RecycleScrollActivity : AppCompatActivity() {
         binding = ActivityRecycleScrollBinding.inflate(layoutInflater)
         val rootView : View = binding.root
         setContentView(rootView)
-        binding.recyclerView.layoutManager = LinearLayoutManager(this)
-        binding.recyclerView.adapter = RecycleAdapter(RecycleDataList)
 
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        /*binding.recyclerView.adapter = RecycleAdapter(RecycleDataList) context를 매개변수로 받으면 아래와 같이*/
+        binding.recyclerView.adapter = RecycleAdapter(RecycleDataList, this)
     }
+
 
 }
