@@ -3,6 +3,7 @@ package com.example.testkotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 
 
@@ -37,6 +38,12 @@ class RecycleScrollActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         /*binding.recyclerView.adapter = RecycleAdapter(RecycleDataList) context를 매개변수로 받으면 아래와 같이*/
         binding.recyclerView.adapter = RecycleAdapter(RecycleDataList, this)
+    }
+
+    fun RecyclerClick(curData: RecycleData){
+        Toast.makeText(this, curData.name, Toast.LENGTH_SHORT).show()
+
+        println("${curData.name} and ${curData.profile}")
     }
 
 

@@ -28,15 +28,14 @@ class RecycleAdapter(val RecycleDataList: ArrayList<RecycleData>, val context : 
     }
     override fun onBindViewHolder(holder: RecycleViewHolder, position: Int) {
         /*축약 가능*/
-        /*val ldata = RecycleDataList[position]*/
-
-        holder.profile.setImageResource(RecycleDataList[position].profile)
-        holder.name.text = RecycleDataList[position].name
+        val curData = RecycleDataList[position]
+        holder.profile.setImageResource(curData.profile)
+        holder.name.text = curData.name
 
         /*item click 시  text 출력*/
         holder.itemView.setOnClickListener{
 //            v ->  Toast.makeText(v.context, RecycleDataList[position].name, Toast.LENGTH_SHORT).show()
-            Toast.makeText(context, RecycleDataList[position].name, Toast.LENGTH_SHORT).show()
+            (context as RecycleScrollActivity).RecyclerClick(curData)
         }
 
     }
