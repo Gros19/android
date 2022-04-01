@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/SlideWindow/src/main/res/layout/activity_main.xml" value="0.10218041898247114" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1265" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/drawable/costum_button.xml" value="0.247" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/drawable/costum_button_selecter.xml" value="0.247" />
@@ -26,6 +27,17 @@
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/layout/activity_scroll_list.xml" value="0.1" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/layout/custom_list.xml" value="0.1" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.247" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.178" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/drawable/ic_baseline_home_24.xml" value="0.178" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/drawable/ic_baseline_person_24.xml" value="0.178" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/drawable/ic_launcher_background.xml" value="0.178" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/layout/activity_main.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/layout/fragment_favorite.xml" value="0.19794784095767423" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/slideapp/src/main/res/menu/nav_menu.xml" value="0.1927710843373494" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/taplayout/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/taplayout/src/main/res/menu/nav_menu.xml" value="0.11329628046173579" />
         <entry key="..\:/Users/wnnah/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.19794784095767423" />
       </map>
     </option>
