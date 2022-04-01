@@ -21,12 +21,16 @@ class MainActivity : AppCompatActivity() {
         /*activity_main.xml id/vPager2에 어뎁터 연결*/
         binding.viewPager2.adapter = adapter
 
+        val tabIconArray = arrayOf(R.drawable.ic_baseline_favorite_24, R.drawable.ic_baseline_home_24,R.drawable.ic_baseline_person_24)
         TabLayoutMediator(binding.tabLaout, binding.viewPager2){
             tab, position ->  binding.viewPager2.setCurrentItem(tab.position, true)
             if(position == 1)
-                tab.setText("Test1")
+                tab.setText("Home")
             else if(position == 0)
-                tab.setText("Test0")
+                tab.setText("Favorite")
+            else if(position == 2)
+                tab.setText("Profile")
+            tab.icon = getDrawable(tabIconArray[position])
         }.attach()
 
 
