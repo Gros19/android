@@ -3,6 +3,7 @@ package com.example.slideapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.slideapp.databinding.ActivityMainBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         /*activity_main.xml id/vPager2에 어뎁터 연결*/
         binding.viewPager2.adapter = adapter
+
+        TabLayoutMediator(binding.tabLaout, binding.viewPager2){
+            tab, position ->  binding.viewPager2.setCurrentItem(tab.position, true)
+            if(position == 1)
+                tab.setText("Test1")
+            else if(position == 0)
+                tab.setText("Test0")
+        }.attach()
 
 
     }
