@@ -16,3 +16,5 @@ rootProject.name = "TestKotlin"
 include ':app'
 include ':slideapp'
 include ':taplayout'
+include ':switch'
+include ':wepview'

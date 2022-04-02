@@ -13,7 +13,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/slideapp" />
+            <option value="$PROJECT_DIR$/switch" />
             <option value="$PROJECT_DIR$/taplayout" />
+            <option value="$PROJECT_DIR$/wepview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
