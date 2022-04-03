@@ -2,7 +2,6 @@ package com.example.videoview
 
 import android.os.Bundle
 import android.widget.MediaController
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.videoview.databinding.ActivityMainBinding
 
@@ -18,13 +17,23 @@ class MainActivity : AppCompatActivity() {
 
         val mediaController = MediaController(this)
         binding.videoView.setMediaController(mediaController)
-        mediaController.setAnchorView(binding.videoView)
+        /*동영상 비율을 일정하게 하기 위해 주석처리*/
+//        mediaController.setAnchorView(binding.videoView)
         binding.videoView.keepScreenOn = true
 
-        binding.videoView.setOnPreparedListener{
-            Toast.makeText(this, "준비 완료", Toast.LENGTH_SHORT).show()
-            binding.videoView.start()
-        }
+        /*시작*/
+        binding.videoView.start()
+
+        /*일시정지*/
+        binding.videoView.pause()
+
+        /*10초로 이동 */
+        binding.videoView.seekTo(10000)
+//        /*준비되면 바로 시작*/
+//        binding.videoView.setOnPreparedListener{
+//            Toast.makeText(this, "준비 완료", Toast.LENGTH_SHORT).show()
+//            binding.videoView.start()
+//        }
 
 
     }
