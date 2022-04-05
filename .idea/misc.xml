@@ -4,8 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/SlideWindow/src/main/res/layout/activity_main.xml" value="0.10218041898247114" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_app_bar.xml" value="0.536" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_app_bar2.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_constraint.xml" value="0.4" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_frame.xml" value="0.536" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_linear.xml" value="0.4" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_main.xml" value="0.19794784095767423" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_navigation_view.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_nested_scroll_view.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_nexted_scroll_view.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_rating_bar.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_search_bar.xml" value="0.1" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_search_view.xml" value="0.264" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_seek_bar.xml" value="0.4" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_spinner.xml" value="0.19794784095767423" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_table.xml" value="0.264" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/layout/activity_tool_bar.xml" value="0.264" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/menu/menu.xml" value="0.19794784095767423" />
+        <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/anothrer/src/main/res/menu/nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1265" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/drawable/costum_button.xml" value="0.247" />
         <entry key="..\:/Users/wnnah/AndroidStudioProjects/TestKotlin/app/src/main/res/drawable/costum_button_selecter.xml" value="0.247" />
@@ -59,5 +75,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.536" />
+      </ProjectState>
+    </option>
   </component>
 </project>
