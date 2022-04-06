@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.videoview">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestKotlin">
         <activity
-            android:name=".ToolBarActivity"
+            android:name=".fragmentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,16 +22,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NavigationViewActivity"
+            android:name=".Mp3Activity"
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".ConnectActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SensorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PushAlarmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TimeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AudioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ToolBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NavigationViewActivity"
+            android:exported="true" />
         <activity
             android:name=".AppBarActivity"
             android:exported="false" />
         <activity
             android:name=".AppBar2Activity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".NestedScrollViewActivity"
             android:exported="true" />
