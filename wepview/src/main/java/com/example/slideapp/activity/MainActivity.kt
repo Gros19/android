@@ -1,4 +1,4 @@
-package com.example.slideapp
+package com.example.slideapp.activity
 
 import android.os.Bundle
 import android.webkit.WebViewClient

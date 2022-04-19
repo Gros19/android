@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val videoPath = "android.resource://" + packageName + "/" + R.raw.a
+        val videoPath = "android.resource://" + packageName + "/" /*+ R.raw.a*/
         /*리소스파일에 있는 mp4를 videoView에 바인딩*/
         binding.videoView.setVideoPath(videoPath)
 

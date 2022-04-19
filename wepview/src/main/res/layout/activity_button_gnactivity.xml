@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ButtonGNActivity">
+    tools:context=".activity.ButtonGNActivity">
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:onClick="Load"
+        android:onClick="load"
         android:id="@+id/googleBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:onClick="Load"
+        android:onClick="load"
         android:id="@+id/naverBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
