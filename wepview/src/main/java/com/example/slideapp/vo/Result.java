@@ -3,10 +3,12 @@ package com.example.slideapp.vo;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 
 /*Parcelable - Activity로 파라미터를 넘기기 위해 사용*/
-public class MemberVO implements Parcelable {
+public class Result implements Parcelable {
     @SerializedName("mem_no")
     private String mem_mo;
     @SerializedName("mem_id")
@@ -15,6 +17,12 @@ public class MemberVO implements Parcelable {
     private String mem_pw;
     @SerializedName("mem_name")
     private String mem_name;
+
+    @NonNull
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public String getMem_mo() {
         return mem_mo;
@@ -50,28 +58,28 @@ public class MemberVO implements Parcelable {
 
 
 
-    public MemberVO(String mem_id, String mem_pw){
+    public Result(String mem_id, String mem_pw){
         this.mem_id = mem_id;
         this.mem_pw = mem_pw;
     }
 
 
-    protected MemberVO(Parcel in) {
+    protected Result(Parcel in) {
         mem_mo = in.readString();
         mem_id = in.readString();
         mem_pw = in.readString();
         mem_name = in.readString();
     }
 
-    public static final Creator<MemberVO> CREATOR = new Creator<MemberVO>() {
+    public static final Creator<Result> CREATOR = new Creator<Result>() {
         @Override
-        public MemberVO createFromParcel(Parcel in) {
-            return new MemberVO(in);
+        public Result createFromParcel(Parcel in) {
+            return new Result(in);
         }
 
         @Override
-        public MemberVO[] newArray(int size) {
-            return new MemberVO[size];
+        public Result[] newArray(int size) {
+            return new Result[size];
         }
     };
 

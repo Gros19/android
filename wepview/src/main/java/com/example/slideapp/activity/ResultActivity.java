@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.slideapp.R;
-import com.example.slideapp.vo.MemberVO;
+import com.example.slideapp.vo.Result;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -21,8 +21,8 @@ public class ResultActivity extends AppCompatActivity {
 
         /*로그인 시 넘겨받은 파라미터를 받는다.*/
         Intent intent = getIntent();
-        MemberVO memberVO = intent.getParcelableExtra("memberVO");
+        Result result = intent.getParcelableExtra("memberVO");
 
-        textView_result.setText(memberVO.getMem_name() + "님 반갑");
+        textView_result.setText(result.getMem_name() + "님 반갑");
     }
 }
