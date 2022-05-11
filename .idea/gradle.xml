@@ -12,8 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/anothrer" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app2" />
             <option value="$PROJECT_DIR$/calendarview" />
+            <option value="$PROJECT_DIR$/ebest" />
             <option value="$PROJECT_DIR$/slideapp" />
             <option value="$PROJECT_DIR$/switch" />
             <option value="$PROJECT_DIR$/taplayout" />

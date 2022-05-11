@@ -6,9 +6,9 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface LoginInterface {
-    String LOGIN_URL = "";
+    String LOGIN_URL = "https://gros19.click/";
     @FormUrlEncoded
-    @POST("경로")
+    @POST("post")
     Call<String> getUserLogin(
             @Field("username") String username,
             @Field("password") String password

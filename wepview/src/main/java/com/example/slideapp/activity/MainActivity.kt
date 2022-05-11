@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         /*새로운 창을 방지하는 기능*/
         binding.webView.webViewClient = WebViewClient()
 
-        binding.webView.loadUrl("https://www.google.com")
+        binding.webView.loadUrl("https://gros19.click/")
 //        binding.webView.loadUrl("https://m.naver.com")
 
     }
