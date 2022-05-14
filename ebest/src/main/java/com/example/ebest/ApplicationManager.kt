@@ -1,19 +1,18 @@
-package com.example.ebest;
+package com.example.ebest
 
-import android.app.Application;
+import android.app.Application
+import com.ebest.api.SocketManager
 
-import com.ebest.api.SocketManager;
+class ApplicationManager : Application() {
 
-public class ApplicationManager extends Application {
-    private SocketManager sock = new SocketManager();
-    public SocketManager getSockInstance(){
-        return sock;
+    private val sock = SocketManager()
+
+    fun getSockInstance(): SocketManager{
+        return sock
     }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        sock.init(this,getApplicationContext());
+    override fun onCreate() {
+        super.onCreate()
+        sock.init(this, applicationContext)
     }
 }
