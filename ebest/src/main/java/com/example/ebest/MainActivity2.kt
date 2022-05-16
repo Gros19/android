@@ -1,5 +1,6 @@
 package com.example.ebest
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -8,7 +9,6 @@ import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback
 import com.ebest.api.SocketManager
 
 class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {
@@ -52,4 +52,31 @@ class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRe
 
 
     }
+
+    /*퍼미션 관련 콜백*/
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        /*권한 거부 시 앱을 종료함*/
+        for( i in 0 .. grantResults.size-1){
+            if(grantResults[i] == -1){
+                /*해당 앱 루트 액티비티를 종료*/
+                finishAffinity()
+                /*현재 작업중인 쓰레드가 종료되면 종료시키라는 명령*/
+                System.runFinalization()
+                /*현재 액티비티를 종료*/
+                System.exit(0)
+            }
+        }
+    }
+
+    /*로그인*/
+    private fun LoginProcess(){
+        if(m_bLoginStatus == false){
+            /*로그인 화면 호출*/
+            var intent = Intent(this, sLoginSet::class.java)
+            startActivityForResult(intent, 1)
+        }
+    }
+
+
 }
