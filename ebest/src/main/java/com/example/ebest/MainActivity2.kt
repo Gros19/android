@@ -1,11 +1,16 @@
 package com.example.ebest
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import android.util.Log
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -75,7 +80,33 @@ class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRe
             /*로그인 화면 호출*/
             var intent = Intent(this, sLoginSet::class.java)
             startActivityForResult(intent, 1)
+        }else{
+            /*로그아웃*/
+            manager.logout()
+            manager.disconnect()
+
+            Toast.makeText(this, "로그아웃 완료", Toast.LENGTH_LONG).show()
+            checkloginstatus(false)
         }
+    }
+
+    private fun checkloginstatus(loginstatus : Boolean){
+        val main = findViewById<LinearLayout>()
+        val name = main.findViewById<TextView>()
+        val img = main.findViewById<ImageView>()
+
+        if(loginstatus){
+            name.setText("로그아웃")
+            name.setTextColor(Color.rgb(210, 34, 34))
+            img.setImageResource(R.drawable.ic_launcher_background)
+            Toast.makeText(applicationContext, "로그인 완료", Toast.LENGTH_SHORT).show()
+
+        }else{
+            name.setText("로그인")
+            name.setTextColor(Color.rgb(0,0,0))
+            img.setImageResource(R.color._WHITE)
+        }
+        m_bLoginStatus = loginstatus
     }
 
 
