@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestKotlin">
         <activity
-            android:name=".fragmentActivity"
+            android:name=".SimpleAdapterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,13 +22,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Mp3Activity"
+            android:name=".fragmentActivity"
             android:exported="true">
-
         </activity>
         <activity
-            android:name=".ConnectActivity"
+            android:name=".Mp3Activity"
             android:exported="true"></activity>
+        <activity
+            android:name=".ConnectActivity"
+            android:exported="true" />
         <activity
             android:name=".SensorActivity"
             android:exported="true" />

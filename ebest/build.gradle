@@ -6,6 +6,7 @@ plugins {
 android {
     compileSdk 32
 
+    namespace "com.example.ebest"
     defaultConfig {
         applicationId "com.example.ebest"
         minSdk 29

@@ -1,5 +1,6 @@
 package com.example.ebest
 
+import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import android.os.Build
@@ -11,12 +12,13 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.CallSuper
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.ebest.api.SocketManager
 
-class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {
+class MainActivity2 : AppCompatActivity() , ActivityCompat.OnRequestPermissionsResultCallback {
     internal var m_bLoginStatus = false;
     internal var m_nHandle = -1;
     internal var handler: ProcMessageHandler? = null
@@ -61,6 +63,7 @@ class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRe
     /*퍼미션 관련 콜백*/
     @RequiresApi(Build.VERSION_CODES.JELLY_BEAN)
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         /*권한 거부 시 앱을 종료함*/
         for( i in 0 .. grantResults.size-1){
             if(grantResults[i] == -1){
@@ -91,9 +94,11 @@ class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRe
     }
 
     private fun checkloginstatus(loginstatus : Boolean){
-        val main = findViewById<LinearLayout>()
-        val name = main.findViewById<TextView>()
-        val img = main.findViewById<ImageView>()
+
+
+        val main = findViewById<LinearLayout>(R.id.navi_log)
+        val name = main.findViewById<TextView>(R.id.btn_name)
+        val img = main.findViewById<ImageView>(R.id.btn_icon)
 
         if(loginstatus){
             name.setText("로그아웃")
@@ -104,9 +109,40 @@ class MainActivity2 : AppCompatActivity(), ActivityCompat.OnRequestPermissionsRe
         }else{
             name.setText("로그인")
             name.setTextColor(Color.rgb(0,0,0))
-            img.setImageResource(R.color._WHITE)
+            img.setImageResource(R.color.white)
         }
         m_bLoginStatus = loginstatus
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        /*LoginProcess 결과값*/
+        when(requestCode){
+            Activity.RESULT_OK ->{
+                checkloginstatus(true)
+            }
+            Activity.RESULT_CANCELED ->{
+                checkloginstatus(false)
+            }
+        }
+    }
+
+    fun onMessege(msg : Message){
+        when(msg.what){
+            /*SOCEkT이 연결이 끊어졌다.
+            * const val RECEIVE_DISCONNECT = -3   //SOCKET이 연결종료된 경우
+            * const val RECEIVE_RECONNECT = 5     // SOCKET종료후 재연결 완료
+            * */
+            -3 -> {
+                val strMsg = msg.obj as String
+                Toast.makeText(applicationContext, strMsg, Toast.LENGTH_SHORT).show()
+            }
+
+            5 -> {
+                var strMsg = "재연결" + msg.obj.toString()
+                Toast.makeText(applicationContext, strMsg, Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
 
