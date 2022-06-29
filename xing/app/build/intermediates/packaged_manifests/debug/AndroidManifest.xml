@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apitest"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:name="com.example.apitest.ApplicationManager"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:label="@string/app_name"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.apitest.MainView" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.apitest.WebViewActivity" >
+        </activity>
+        <activity android:name="com.example.apitest.sLoginSet" />
+        <activity android:name="com.example.apitest.sLoginSample1" />
+        <activity android:name="com.example.apitest.sLoginSample2" />
+        <activity
+            android:name="com.ebest.api.login.importSignActivity"
+            android:label="공동인증서 가져오기"
+            android:theme="@style/NoTitleBar" />
+        <activity
+            android:name="com.ebest.api.login.Login2Activity"
+            android:label="공동인증 로그인"
+            android:noHistory="true"
+            android:theme="@style/NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.ebest.api.login.Login1Activity"
+            android:label="접속 로그인"
+            android:noHistory="true"
+            android:theme="@style/NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>
