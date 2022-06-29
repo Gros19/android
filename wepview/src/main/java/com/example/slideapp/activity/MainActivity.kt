@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding.webView.webViewClient = WebViewClient()
 
         binding.webView.loadUrl("https://gros19.click/")
+//        binding.webView.loadUrl("https://kind.krx.co.kr/corpgeneral/corpList.do?method=loadInitPage#companysum")
 //        binding.webView.loadUrl("https://m.naver.com")
 
     }

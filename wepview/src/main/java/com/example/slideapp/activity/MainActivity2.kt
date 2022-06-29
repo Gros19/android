@@ -99,7 +99,7 @@ class MainActivity2 : AppCompatActivity() {
         }
 
 
-        val url = "https://3.38.118.177/index"
+        val url = "https://gros19.click/"
         webView.loadUrl(url)
 
 
@@ -141,26 +141,26 @@ class MainActivity2 : AppCompatActivity() {
         }
 
 
-        override fun onReceivedSslError(view: WebView, handler: SslErrorHandler, error: SslError) {
-            var builder: android.app.AlertDialog.Builder =
-                android.app.AlertDialog.Builder(this@MainActivity2)
-            var message = "SSL Certificate error."
-            when (error.primaryError) {
-                SslError.SSL_UNTRUSTED -> message = "The certificate authority is not trusted."
-                SslError.SSL_EXPIRED -> message = "The certificate has expired."
-                SslError.SSL_IDMISMATCH -> message = "The certificate Hostname mismatch."
-                SslError.SSL_NOTYETVALID -> message = "The certificate is not yet valid."
-            }
-            message += " Do you want to continue anyway?"
-            builder.setTitle("SSL Certificate Error")
-            builder.setMessage(message)
-            builder.setPositiveButton("continue",
-                DialogInterface.OnClickListener { _, _ -> handler.proceed() })
-            builder.setNegativeButton("cancel",
-                DialogInterface.OnClickListener { dialog, which -> handler.cancel() })
-            val dialog: android.app.AlertDialog? = builder.create()
-            dialog?.show()
-        }
+//        override fun onReceivedSslError(view: WebView, handler: SslErrorHandler, error: SslError) {
+//            var builder: android.app.AlertDialog.Builder =
+//                android.app.AlertDialog.Builder(this@MainActivity2)
+//            var message = "SSL Certificate error."
+//            when (error.primaryError) {
+//                SslError.SSL_UNTRUSTED -> message = "The certificate authority is not trusted."
+//                SslError.SSL_EXPIRED -> message = "The certificate has expired."
+//                SslError.SSL_IDMISMATCH -> message = "The certificate Hostname mismatch."
+//                SslError.SSL_NOTYETVALID -> message = "The certificate is not yet valid."
+//            }
+//            message += " Do you want to continue anyway?"
+//            builder.setTitle("SSL Certificate Error")
+//            builder.setMessage(message)
+//            builder.setPositiveButton("continue",
+//                DialogInterface.OnClickListener { _, _ -> handler.proceed() })
+//            builder.setNegativeButton("cancel",
+//                DialogInterface.OnClickListener { dialog, which -> handler.cancel() })
+//            val dialog: android.app.AlertDialog? = builder.create()
+//            dialog?.show()
+//        }
     }
 
 
