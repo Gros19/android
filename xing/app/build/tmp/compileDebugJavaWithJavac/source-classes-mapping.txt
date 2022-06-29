@@ -1,0 +1,21 @@
+com/example/apitest/AndroidBridge.java
+ com.example.apitest.AndroidBridge
+ com.example.apitest.AndroidBridge$ProcMessageHandler
+com/example/apitest/BuildConfig.java
+ com.example.apitest.BuildConfig
+com/example/apitest/s1006_j.java
+ com.example.apitest.s1006_j
+ com.example.apitest.s1006_j$1
+ com.example.apitest.s1006_j$2
+ com.example.apitest.s1006_j$3
+ com.example.apitest.s1006_j$4
+ com.example.apitest.s1006_j$5
+ com.example.apitest.s1006_j$ProcMessageHandler
+com/example/apitest/s1007_j.java
+ com.example.apitest.s1007_j
+ com.example.apitest.s1007_j$1
+ com.example.apitest.s1007_j$ProcMessageHandler
+com/example/apitest/s1001_j.java
+ com.example.apitest.s1001_j
+ com.example.apitest.s1001_j$1
+ com.example.apitest.s1001_j$ProcMessageHandler

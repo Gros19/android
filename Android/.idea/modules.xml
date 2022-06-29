@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestKotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/TestKotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/anothrer/TestKotlin.anothrer.iml" filepath="$PROJECT_DIR$/.idea/modules/anothrer/TestKotlin.anothrer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TestKotlin.app2.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TestKotlin.app2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calendarview/TestKotlin.calendarview.iml" filepath="$PROJECT_DIR$/.idea/modules/calendarview/TestKotlin.calendarview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ebest/TestKotlin.ebest.iml" filepath="$PROJECT_DIR$/.idea/modules/ebest/TestKotlin.ebest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mylibrary/TestKotlin.mylibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/mylibrary/TestKotlin.mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slideapp/TestKotlin.slideapp.iml" filepath="$PROJECT_DIR$/.idea/modules/slideapp/TestKotlin.slideapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/switch/TestKotlin.switch.iml" filepath="$PROJECT_DIR$/.idea/modules/switch/TestKotlin.switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taplayout/TestKotlin.taplayout.iml" filepath="$PROJECT_DIR$/.idea/modules/taplayout/TestKotlin.taplayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/videoview/TestKotlin.videoview.iml" filepath="$PROJECT_DIR$/.idea/modules/videoview/TestKotlin.videoview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wepview/TestKotlin.wepview.iml" filepath="$PROJECT_DIR$/.idea/modules/wepview/TestKotlin.wepview.iml" />
+    </modules>
+  </component>
+</project>
